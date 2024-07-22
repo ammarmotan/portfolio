@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Font Awesome -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
+        rel="stylesheet"
+        />
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"><i>Ammar</i></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active"style="color:#fff;" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <video autoplay muted loop playsinline class="banner-video">
+            <source src="my-tech.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h2 data-aos="fade-right" data-aos offset="200"
+            data-aos-duration="2000" data-aos-once="true">AMMAR MOTAN</h2>
+            <div class="text-container">
+                <p id="typing-text"></p>
+            </div>
+            <a href="#projects" data-aos="fade-up" data-aos offset="200"
+            data-aos-duration="2000" data-aos-once="true"><button>Projects</button></a>
+            <!-- <button class="cv"><a href="Ammar Updated Resume.pdf" download="">Projects</a></button> -->
+        </div>
+    </div>
+    <div class="container d-flec justify-content-center align-item-center m-auto">
+        <div class="carder">
+            <p><span>"</span> Greetings! I'm Ammar Motan, an IT student at Aptech with a foundation in frontend development (HTML5, CSS3, Bootstrap 5, JavaScript) and backend technologies (PHP, MySQL, Laravel). I create responsive, dynamic web applications and aim to build full-stack solutions. Let's connect and explore IT opportunities! <span>"</span></p>
+        </div>
+   </div><br><br>
+   <div class="card mb-3 about" style="max-width: 900px;margin: auto;padding: 20px;" id="about">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="ammar.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h2 class="card-title" data-aos="fade-left" data-aos offset="200"
+          data-aos-duration="2000" data-aos-once="true">Let's Introduce About Myself</h2>
+          <p class="card-text" data-aos="zoom-in" data-aos offset="200"
+          data-aos-duration="2000" data-aos-once="true"> Greetings! I'm Ammar Motan, an IT student at Aptech with a foundation in frontend development (HTML5, CSS3, Bootstrap 5, JavaScript) and backend technologies (PHP, MySQL, Laravel). I create responsive, dynamic web applications and aim to build full-stack solutions. Let's connect and explore IT opportunities! </p>
+          <a href="Ammar Updated Resume.pdf" data-aos="fade-up" data-aos offset="200"
+          data-aos-duration="2000" data-aos-once="true" download="" style="width: 180px;" class="cv" onclick="down()"><button>Download CV</button></a>
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="service" id="service">
+    <h2>Our Services</h2>
+  </div><br><br>
+  <div class="con">
+    <div class="front" data-aos="fade-up" data-aos offset="200"
+    data-aos-duration="2000" data-aos-once="true">
+        <h2>Front-End Developer</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="back" data-aos="fade-up" data-aos offset="200"
+    data-aos-duration="2000" data-aos-once="true">
+        <h2>Back-End Developer</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="ui" data-aos="fade-up" data-aos offset="200"
+    data-aos-duration="2000" data-aos-once="true">
+        <h2>UI / UX Designer</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div><br><br>
+
+  <div class="p-head" id="projects">
+      <h2>My Project's</h2>
+  </div><br><br>
+  <div class="project">
+    <div class="pro" id="pro">
+        <img src="festo ss.PNG" alt="">
+        <h5>Festival Blog Website</h5>
+        <a href="https://ammarmotan.github.io/festival/home.html"  target="_blank" class="live" id="live"><button>Live Preview</button></a>
+    </div>
+    <div class="pro" id="pro">
+        <img src="Restaurant ss.PNG" alt="">
+        <h5>Restaurant Website</h5>
+        <a href="https://ammarmotan.github.io/project/" target="_blank" class="live" id="live"><button>Live Preview</button></a>
+    </div>
+    <div class="pro" id="pro">
+        <img src="weather ss.PNG" alt="">
+        <h5>World Weather App</h5>
+        <a href="https://ammarmotan.github.io/Weather-App/" target="_blank" class="live" id="live"><button>Live Preview</button></a>
+    </div>
+  </div><br><br>
+
+  <div class="price">
+    <h2>Pricing</h2>
+  </div><br><br>
+  <div class="pricing">
+    <div class="p-card">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <h2>Basic</h2>
+        <p>4 pages website</p>
+        <p>HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+        <p>Without Admin Panel</p>
+        <p>1 time Rivision</p>
+        <p>Complete in 1 week</p>
+        <h3>$250</h3>
+    </div>
+    <div class="p-card">
+        <i class="fa fa-gem" aria-hidden="true"></i>
+        <h2>Premium</h2>
+        <p>6 pages website</p>
+        <p>HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP, MYSQL</p> 
+        <p>With Admin Panel</p>
+        <p>2 time Rivision</p>
+        <p>Complete in 1 month</p>
+        <h3>$800</h3>
+    </div>
+    <div class="p-card">
+        <i class="fa fa-crown" aria-hidden="true"></i>
+        <h2>Elite</h2>
+        <p>Unlimited pages website</p>
+        <p>HTML, CSS, BOOTSTRAP, JAVASCRIPT, PHP, MYSQL</p> 
+        <p>With Admin Panel</p>
+        <p>3 time Rivision</p>
+        <p>Complete in 1 one month</p>
+        <h3>$1000</h3>
+    </div>
+</div><br><br><br>
+<footer class="text-center" style="color: #fff; background-color: #353535;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f" style="color: #33cc00;"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter" style="color: #33cc00;"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google" style="color: #33cc00;"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram" style="color: #33cc00;"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin" style="color: #33cc00;"></i
+        ></a>
+        <!-- Github -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github" style="color: #33cc00;"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);color: #fff;">
+      © 2024 Copyright:
+      <a class="" href="https://mdbootstrap.com/" style="color: #fff;">Ammar.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+   crossorigin="anonymous"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
+></script>
+   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script> -->
+   <script src="./js/index.js"></script>
+</body>
+</html>
