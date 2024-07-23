@@ -80,7 +80,7 @@
    <div class="card mb-3 about" style="max-width: 900px;margin: auto;padding: 20px;" id="about">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="ammar.png" class="img-fluid rounded-start" alt="...">
+        <img src="ammar-pic.png" class="img-fluid rounded-start" alt="..." style="height: 400px;padding-left: 60px;padding-right: 0;">
       </div>
       <div class="col-md-8">
         <div class="card-body">
@@ -148,7 +148,7 @@
         <p>Without Admin Panel</p>
         <p>1 time Rivision</p>
         <p>Complete in 1 week</p>
-        <h3>$250</h3>
+        <h3>$300</h3>
     </div>
     <div class="p-card">
         <i class="fa fa-gem" aria-hidden="true"></i>
@@ -170,7 +170,40 @@
         <p>Complete in 1 one month</p>
         <h3>$1000</h3>
     </div>
-</div><br><br><br>
+</div><br><br>
+
+<div class="blog">
+  <h2>Blogs</h2>
+</div><br><br>
+<div class="bloging">
+  <div class="b-card" id="pro">
+      <img src="ai.jpg" alt="">
+      <h5>Artificial Intelligence</h5>
+      <p>AI transforms industries, driving innovation, automation, and efficiency through intelligent algorithms, machine learning, and data analysis, reshaping our future.</p>
+  </div>
+  <div class="b-card" id="pro">
+      <img src="computer.jpg" alt="">
+      <h5>Information Technology</h5>
+      <p>IT empowers businesses with advanced technology, streamlining operations, enhancing security, and fostering innovation through efficient data management and connectivity.</p>
+  </div>
+  <div class="b-card" id="pro">
+      <img src="job.jpg" alt="">
+      <h5>IT Jobs</h5>
+      <p>IT jobs offer dynamic opportunities in software development, cybersecurity, data analysis, and network management, driving technological advancements and innovation.</p>
+  </div>
+</div><br><br>
+
+<div class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form id="form">
+    <center>
+      <input type="text" id="from_name" placeholder="Enter Name" name="name" required>
+      <input type="email" id="email_id" placeholder="Enter Email" name="email" required><br>
+      <textarea id="message" placeholder="Write Something" name="message"></textarea><br><br>
+      <button type="submit" onclick="click()" id="button"><span class="box">Submit</span></button><br><br>
+    </center>
+  </form>
+</div><br><br>
 <footer class="text-center" style="color: #fff; background-color: #353535;">
     <!-- Grid container -->
     <div class="container pt-4">
@@ -255,10 +288,12 @@
 type="text/javascript"
 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
 ></script>
-   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script>
-    AOS.init();
-  </script> -->
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('A_WfTHegWb0C6gwr_')
+</script>
    <script src="./js/index.js"></script>
 </body>
 </html>

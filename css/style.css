@@ -492,3 +492,230 @@ a {
   }
 }
 /* pricing */
+
+/* blog */
+.blog h2 {
+  color: #fff;
+  padding-top: 13%;
+  padding-bottom: 1%;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.blog h2::before,
+.blog h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(45deg,
+  #33CC00,
+  #33CC00 84%);
+  background-blend-mode: normal;
+  display: inline-block;
+}
+
+.blog h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.blog h2:after {
+  margin: 0 0 10px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+.bloging{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.b-card{
+  color: #fff;
+  background-color: transparent;
+  box-sizing: border-box;
+  transition: 0.5s;
+  width: 330px;
+  height: 380px;
+  border: 1px solid #353535;
+}
+.b-card img{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 180px;
+}
+.b-card h5{
+  padding-top: 10px;
+  text-align: center;
+}
+.b-card h5{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.b-card p{
+  text-align: center;
+}
+.b-card:hover{
+  cursor: pointer;
+}
+@media (max-width:800px) {
+  .bloging{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .b-card{
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    margin-top: 0;
+    height: auto;
+  }
+}
+/* blog */
+
+.contact{
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 10%;
+  border: 1px solid #353535;
+}
+.contact h2 {
+  color: #fff;
+  padding-top: 3%;
+  padding-bottom: 1%;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.contact h2::before,
+.contact h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(45deg,
+  #33CC00,
+  #33CC00 84%);
+  background-blend-mode: normal;
+  display: inline-block;
+}
+
+.contact h2:before {
+  margin: 0 15px 10px 0;
+}
+
+.contact h2:after {
+  margin: 0 0 10px 15px;
+}
+
+a {
+  text-decoration: none;
+}
+.contact input{
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #33CC00;
+  outline: none;
+  color: #fff;
+  /* margin-left: 2px; */
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 30px;
+  width: 300px;
+  height: 40px;
+}
+#message{
+  overflow-wrap: break-word;  
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #33CC00;
+  outline: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 35px;
+  width: 300px;
+  height: 40px;
+}
+.box {
+  width: 140px;
+  height: auto;
+  /* float: left; */
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: #fff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #fff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}

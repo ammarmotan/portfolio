@@ -61,6 +61,7 @@ function down(){
 }
 // cv //
 
+
 // project //
 document.addEventListener("mousemove", function(){
   let pro=document.getElementById("pro");
@@ -70,3 +71,36 @@ document.addEventListener("mousemove", function(){
   }
 })
 // project //
+
+// click //
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_bzgiuot';
+   const templateID = 'template_x53efkh';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      swal("Submited!", "Thankyou! Form is Submited", "success");
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+// function click(){
+// var params ={
+//   from_name : document.getElementById("name").value,
+//   email_id : document.getElementById("email").value,
+//   message : document.getElementById("msg").value
+// }
+// emailjs.send("service_bzgiuot" , "template_x53efkh" , params).then(function (res){
+//   alert("success");
+// })
+// }
+// click //
